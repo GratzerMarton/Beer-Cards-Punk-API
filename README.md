@@ -1,10 +1,10 @@
 # Coding Challange - 2 hours : Beer API consumer + Filter + Subpages
 
-# Bootsrapped with CRA + Typescript Template
+### Bootsrapped with CRA + Typescript Template
 
-# Styling with CSS Modules (very generic)
+### Styling with CSS Modules (very generic)
 
-# Types Made with : (http://json2ts.com/)
+### Types Made with : (http://json2ts.com/)
 
 # Getting Started with Create React App
 
