@@ -1,7 +1,8 @@
 import React, { FC } from 'react'
-import { RouteComponentProps } from 'react-router-dom'
-import { RootObject } from "../Interfaces/index"
 
+import BeerCard from '../Components/BeerCard'
+import { RootObject } from "../Interfaces/index"
+import styles from "../styles/BeerBrowser.module.css"
 type BeerBrowserProps = {
     beerData: RootObject[]
 }
@@ -10,7 +11,14 @@ const BeerBrowser: FC<BeerBrowserProps> = (props) => {
 
     console.log(props);
     return (
-        <div>
+        <div className={styles.container}>
+            {
+                props.beerData.map((item) =>
+                    <BeerCard beer={item}></BeerCard>
+
+                )
+            }
+
 
         </div>
     )

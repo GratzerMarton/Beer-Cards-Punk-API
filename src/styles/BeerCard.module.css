@@ -1,0 +1,44 @@
+.container{
+    width: 20rem;
+display: flex;
+flex-wrap: wrap;
+    background-color: aliceblue;
+    border-radius: 1rem;
+padding: 1rem;
+margin-bottom: 1rem;
+margin-left: auto;
+margin-right: auto;
+}
+
+.image{
+width: 5rem;
+height: 25rem;
+object-fit: contain;
+margin-right: auto;
+margin-left: auto;
+}
+
+h1{
+width: 100%;
+text-align: center;
+}
+
+.showonhover:hover{
+    display: block;
+}
+
+.showonhover{
+    display: none;
+    animation: fadein 1s;
+}
+
+a{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    margin-top: auto;
+    height: 1rem;
+}
