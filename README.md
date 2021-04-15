@@ -5,7 +5,7 @@
 ### Styling with CSS Modules (very generic)
 
 ### Types Made with : (http://json2ts.com/)
-![alt text](https://imgur.com/mdARtNV)
+![alt text](https://i.imgur.com/mdARtNV.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
