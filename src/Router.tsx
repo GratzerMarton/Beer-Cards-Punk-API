@@ -30,7 +30,7 @@ const Router: FC = () => {
     <BrowserRouter>
       <Switch>
         <Route path="/beer/:id">
-          <Beer />
+          <Beer beerData={beerData} />
         </Route>
 
         <Route path="/">

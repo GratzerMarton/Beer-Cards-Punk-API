@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect, useState } from 'react'
 
 import BeerCard from '../Components/BeerCard'
 import { RootObject } from "../Interfaces/index"
@@ -8,19 +8,35 @@ type BeerBrowserProps = {
 }
 
 const BeerBrowser: FC<BeerBrowserProps> = (props) => {
+    const [filterState, setFilterState] = useState(false)
+    const [filteredBeers, setFilteredBeers] = useState<RootObject[]>([])
+    useEffect(() => {
+        if (filterState) {
+            setFilteredBeers(props.beerData.filter((item) => Number(item.first_brewed.split('/')[1]) < 2011))
+        }
+        else {
+            setFilteredBeers(props.beerData)
+        }
 
-    console.log(props);
-    return (
+    }, [props.beerData, filterState])
+
+    return (<>
+        <div className={styles.filtercontainer}>
+            <button className={filterState ? styles.button_on : styles.button_off} onClick={() => setFilterState(!filterState)}><h1>Filter</h1></button>
+
+        </div>
+
         <div className={styles.container}>
+
             {
-                props.beerData.map((item) =>
+                filteredBeers.map((item) =>
                     <BeerCard beer={item}></BeerCard>
 
                 )
             }
 
 
-        </div>
+        </div></>
     )
 }
 

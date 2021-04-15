@@ -12,8 +12,8 @@ const BeerCard: FC<BeerBrowserProps> = (props) => {
     console.log(props);
     return (
         <div className={styles.container}>
-            <img className={styles.image} src={props.beer.image_url}></img>
-
+            <img className={styles.image} src={props.beer.image_url} alt={props.beer.name}></img>
+            <h3 className={styles.showonhover}>{props.beer.tagline}</h3>
             <h1>{props.beer.name}</h1>
             <p>{props.beer.description}</p>
             <Link to={`/beer/${props.beer.id}`}>Click for more info</Link>
