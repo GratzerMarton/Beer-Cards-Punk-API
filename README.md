@@ -1,4 +1,4 @@
-# Coding Challange - 2 hours : Beer API consumer + Filter + Subpages
+# Coding Challange - 2 hours : Beer API consumer, Generic Beer List Page + Filter + Subpage for each Beer
 
 ### Bootsrapped with CRA + Typescript Template
 
